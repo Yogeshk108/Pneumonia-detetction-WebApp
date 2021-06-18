@@ -45,11 +45,12 @@ app.post('/home', upload.single('image') ,function (req, res) {
     request( MyURL , (err , response, body) => {
       if(err) {
         console.log('ERROR : ' , err);
+        res.render('index');
       }
       else {
         console.log('\nBody : ', body);
 
-        //ReportCreator.generateReport(req.body, body);
+        ReportCreator.generateReport(req.body, body);
         
         const pdfName = req.body.first_name + '_' + req.body.last_name  + '_'+ 'X-Ray.pdf';
         const imgName = req.body.first_name + "_" + req.body.last_name + "_" + req.file.originalname;
