@@ -56,7 +56,7 @@ app.post('/home', upload.single('image') ,function (req, res) {
         const imgName = req.body.first_name + "_" + req.body.last_name + "_" + req.file.originalname;
 
         if(req.body.report == "yes") {
-          setTimeout( () => { email.sendEmail(pdfName , req.body.email_id) } , 2.0*1000 );
+          setTimeout( () => { email.sendEmail(pdfName , req.body.email) } , 2.0*1000 );
         }
         res.render('new' , {
           pdfName : pdfName,
