@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Pnumolert</title>
+    <link rel="icon" href="/img/logo1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" >
+                <img src="/img/logo2.png" alt="PneumoLert" width="200" height="60">
+            </a>
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/help" class="nav-link">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/precaution" class="nav-link">Cough Precautions</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="display-4 ">Fill the patient details and upload the chest X-Ray</p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="col-6">
+                <form action="/home" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <div class="row g-3">
+                            <div class="col">
+                                <input type="text" name="first_name" class="form-control" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" name="last_name" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" name="gender" aria-label="Default select example">
+                            <option selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" name="age" class="form-control" placeholder="Age">
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" name="phoneNo" class="form-control" placeholder="Phone Nmber">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="address" id="Address" class="form-control" placeholder="City/village">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" name="report" aria-label="Default select example">
+                            <option selected>Want report on Email</option>
+                            <option value="yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email address</label>
+                        <input type="email" name="email" class="form-control" id="Email" placeholder="name@example.com">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="file" name="image" accept="image/*" class="form-control" id="inputFile">
+                        <label class="input-group-text" for="inputFile">Upload Chest X-Ray</label>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

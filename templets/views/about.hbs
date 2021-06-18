@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pnumolert</title>
+        <link rel="icon" href="/img/logo1.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" >
+                    <img src="/img/logo2.png" alt="PneumoLert" width="200" height="60">
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/help" class="nav-link">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/precaution" class="nav-link">Cough Precautions</a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+        <div class="b-example-divider" ></div>
+        <div class="container">
+            <div class="row col">
+                <p class="display-5">PneumoLert is machine learning based Web application for pneumonia detetction.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <h6 class="fst-italic fw-light">(Scroll down to read more...)</h6>
+        </div>
+        <br>
+        <div class="row col">
+            <img src="/img/virus.jpg" class="rounded mx-auto d-block" alt="Chest X-Ray Image" height="900px" width="1050px" role="presentation">
+        </div>
+        <br>
+        <div class="container">
+            <div class="col row">
+                <h2 class="fw-bold">A Pandemic in 21st Century</h2>
+            </div>
+            <div class="col row">
+                <h5 class="lh-base">
+                    With the recent outbreak of COVID-19 also known as the coronavirus, it does seem like history is repeating itself and we are going back in time to the 1900s during the spanish influenza. The coronavirus is a deadly virus that has claimed hundreds of thousands of lives in countries around the world. Older adults and people who have severe underlying medical conditions or prior cases of pneumonia seem to be at higher risk for developing more serious complications from the virus. With rising deaths and limited medical resources, doctors and medical professionals around the world are working around the clock to treat patients and prevent the spread of the virus. Severe forms of the virus can cause pneumonia leading to greater risk of death. It is crucial to have quick and accurate detection of pneumonia so patients can receive treatment in a timely manner especially in impoverished regions.
+                </h5> <br>
+                <h5 class="lh-base">
+                    With the growing technological advancements we have in this day and age, it is possible to use tools based on deep learning frameworks to detect pneumonia based on chest x-ray images. The challenge here would be to aid the diagnosis process which allows for expedited treatment and better clinical outcomes.
+                </h5> <br>
+                <h5 class="lh-base">
+                    The dataset that will be used for this project will be the Chest X-Ray Images (Pneumonia) from Kaggle. The dataset consists of training data, validation data, and testing data. The training data consists of 5,216 chest x-ray images with 3,875 images shown to have pneumonia and 1,341 images shown to be normal. The validation data is relatively small with only 16 images with 8 cases of pneumonia and 8 normal cases. The testing data consists of 624 images split between 390 pneumonia cases and 234 normal cases.
+                </h5> <br>
+                <h5 class="lh-base">
+                    We have developed the sequential CNN model in python using keras and tensorflow libraries. During training the model accuracy is increased with every epoch. The trained model can successfully detect the pneumonia and also send the lab report to patients email id. The main motive of the project is to reduce workload from diagnostic centers and efficiently detect pneumonia.
+                </h5>
+            </div>
+        </div>
+
+    </body>
+</html>
